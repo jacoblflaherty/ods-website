@@ -243,3 +243,9 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(21, 60,
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ---- Blog article ----------------------------------------------------------------------- */
+.article__wrap { max-width: 800px; }
+.article__meta { font-size: .95rem; color: var(--body); }
+.article__hero { border-radius: var(--radius-card); margin-block: 24px 32px; width: 100%; object-fit: cover; }
+.article__source { background: var(--neutral-100); border-left: 4px solid var(--amber); padding: 20px 24px; border-radius: 8px; margin-block: 8px 32px; }
