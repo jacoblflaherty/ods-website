@@ -4,27 +4,24 @@
    Tokens documented in /BRANDING.md
    ========================================================================== */
 
-/* ---- Fonts (local first; CDN fallback until assets are localized) ------ */
+/* ---- Fonts (self-hosted) ------ */
 @font-face {
   font-family: "Jakarta Display";
-  src: url("../assets/fonts/PlusJakartaDisplay-Regular.woff2") format("woff2"),
-       url("https://cdn.prod.website-files.com/636d6d9c18e574a88037d5d7/636d6d9c18e574646c37d5fd_PlusJakartaDisplay-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/PlusJakartaDisplay-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Jakarta Display";
-  src: url("../assets/fonts/PlusJakartaDisplay-Medium.woff2") format("woff2"),
-       url("https://cdn.prod.website-files.com/636d6d9c18e574a88037d5d7/636d6d9c18e574af4337d5f6_PlusJakartaDisplay-Medium.woff2") format("woff2");
+  src: url("../assets/fonts/PlusJakartaDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Jakarta Display";
-  src: url("../assets/fonts/PlusJakartaDisplay-Bold.woff2") format("woff2"),
-       url("https://cdn.prod.website-files.com/636d6d9c18e574a88037d5d7/636d6d9c18e574180037d601_PlusJakartaDisplay-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/PlusJakartaDisplay-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
