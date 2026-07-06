@@ -257,3 +257,20 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(21, 60,
 .article__meta { font-size: .95rem; color: var(--body); }
 .article__hero { border-radius: var(--radius-card); margin-block: 24px 32px; width: 100%; object-fit: cover; }
 .article__source { background: var(--neutral-100); border-left: 4px solid var(--amber); padding: 20px 24px; border-radius: 8px; margin-block: 8px 32px; }
+
+/* ---- Restored Webflow imagery (2026-07-05 image audit) --------------------------- */
+.section-photo { display: block; max-width: 760px; width: 100%; height: auto; margin: 48px auto 0; border-radius: var(--radius-card); }
+.team-photo { width: 100%; height: auto; border-radius: var(--radius-card); }
+.t-card__photo { width: 100%; height: auto; border-radius: var(--radius-card); margin-bottom: 16px; }
+
+/* Floating hero circles (job-seeker hero, from Webflow template) */
+.hero--circles { position: relative; overflow: hidden; }
+.hero--circles .container { position: relative; z-index: 1; }
+.bg-circle { position: absolute; pointer-events: none; }
+.bg-circle--1 { z-index: 0; top: -60px; left: -192px; }
+.bg-circle--2 { top: 63px; left: 281px; }
+.bg-circle--3 { top: 384px; left: -42px; }
+.bg-circle--4 { z-index: 0; top: -98px; right: -192px; }
+.bg-circle--5 { top: 479px; right: -87px; }
+.bg-circle--6 { top: 718px; right: 345px; }
+@media (max-width: 767px) { .bg-circle { display: none; } }
