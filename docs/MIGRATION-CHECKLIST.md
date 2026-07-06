@@ -8,7 +8,7 @@ below is verified by Jake.**
 
 | Webflow page | Static path | SEO meta parity |
 |---|---|---|
-| Home (splash) `/` | `/index.html` | ⚠️ Title/desc updated; **design match pending visual capture** |
+| Home (splash) `/` | `/index.html` | ✅ Rebuilt 2026-07-05 from archived Webflow markup + CDN CSS (photo bg, colour logo, blue/white CTAs); verify on droplet after deploy |
 | Home V2 `/home-v2` | `/home-v2/` | ✅ |
 | Services `/services` | `/services/` | ✅ + all 7 service cards now link to real pages |
 | Industrial Staffing | `/industrial-staffing/` | ✅ |
