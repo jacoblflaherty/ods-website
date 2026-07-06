@@ -231,7 +231,7 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(21, 60,
    22px #110d02 caps lead, blue primary + white secondary buttons. */
 .splash { position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center; text-align: center; background: #fff url('/assets/img/splash-bg.webp') center / cover no-repeat; padding: var(--gutter); }
 .splash::before { content: ""; position: absolute; inset: 0; background: rgba(247, 247, 251, .33); }
-.splash__inner { position: relative; max-width: min(670px, 70%); animation: splash-in .8s cubic-bezier(.25, .46, .45, .94) both; }
+.splash__inner { position: relative; max-width: 70%; animation: splash-in .8s cubic-bezier(.25, .46, .45, .94) both; }
 .splash__logo { width: min(300px, 50%); height: auto; margin-inline: auto; margin-bottom: 24px; }
 .splash__lead { color: #110d02; font-size: 22px; line-height: 32px; font-weight: 400; margin: 0 auto; }
 .splash__lead strong { font-weight: 700; }
