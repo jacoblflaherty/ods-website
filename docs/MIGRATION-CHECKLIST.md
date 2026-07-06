@@ -42,6 +42,18 @@ below is verified by Jake.**
 | /utility-pages/* (start-here, styleguide, licenses, changelog) | BRIX template docs; noindexed |
 | CMS templates: SKUs, Products, Categories, Authors, Blog Categories, Blog Posts, Job Categories, Companies, Jobs | All unpublished on Webflow (June session cleanup, DEC-007/DEC-009); no live URLs |
 
+## Image parity (2026-07-05 API audit — commit bd80f5b)
+
+Every Image element on every core page was pulled from the Webflow API and diffed against the
+static build. Restored: ods-team-office.webp (9 pages), home-v2 team photo pair, success-stories
+client photos, apply-now hero circles, quote icon. Removed: invented home-v2 hero photo (live
+hero has none). Known copy difference for Jake's call: our header button says "Contact ODS";
+live says "Contact On demand staffing" (employer) / "Contact Ondemand staffing" (job seeker).
+
+**Reviewing the static site after DNS rollback propagated:** the droplet only answers to the
+domain name (certbot server_name), so add this line to /etc/hosts to preview it, remove to see
+live Webflow again: `159.89.236.177 ondemandstaffing.ca www.ondemandstaffing.ca`
+
 ## Before ANY re-cutover (in order)
 
 1. [ ] Homepage `/` rebuilt to visually match the live Webflow splash (screenshot compare)
