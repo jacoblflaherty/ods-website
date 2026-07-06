@@ -294,7 +294,7 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(21, 60,
 /* Success stories — walsh-style feature blocks */
 .story { background: var(--neutral-100); }
 .story--blue { background-image: linear-gradient(rgba(39,72,153,.94), rgba(39,72,153,.94)), url('/assets/img/work-bg.jpeg'); background-position: 0 0, 50%; background-size: auto, cover; }
-.story__grid { display: grid; grid-template-columns: 1fr; }
+.story__grid { display: grid; grid-template-columns: 5fr 7fr; gap: 48px; align-items: end; }
 .story__photo-wrap { display: flex; justify-content: center; align-items: flex-end; padding-top: 48px; }
 .story__photo { max-width: 420px; width: 100%; height: auto; }
 .story__body { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; padding-block: 48px; }
