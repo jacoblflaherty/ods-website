@@ -88,7 +88,9 @@ a:hover { color: var(--blue-500); }
 /* ---- Buttons -------------------------------------------------------------- */
 .btn {
   display: inline-block;
-  font: 700 1rem/1 var(--font);
+  font: 700 1rem/1.125 var(--font);
+  text-transform: uppercase;
+  letter-spacing: .08em;
   padding: 18px 24px;
   border: 0;
   border-radius: var(--radius-btn);
@@ -223,12 +225,21 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(21, 60,
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, .15); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; font-size: .95rem; }
 .footer-bottom img { width: 140px; }
 
-/* ---- Splash page (/) ----------------------------------------------------------------- */
-.splash { min-height: 100svh; display: grid; place-items: center; background: var(--navy-900); text-align: center; padding: var(--gutter); }
-.splash__logo { width: min(320px, 70vw); margin-inline: auto; margin-bottom: 40px; }
-.splash h1 { color: var(--white); font-size: clamp(1.75rem, 4vw, 3rem); max-width: 18ch; margin-inline: auto; }
-.splash h1 strong { color: var(--amber); }
-.splash__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+/* ---- Splash page (/) ------------------------------------------------------------------
+   Matches the live Webflow splash: full-viewport photo bg (pexels desk shot) with a soft
+   light wash (#f7f7fb85 x .63 opacity ≈ rgba .33), colour logo (max 50% / ~300px),
+   22px #110d02 caps lead, blue primary + white secondary buttons. */
+.splash { position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center; text-align: center; background: #fff url('/assets/img/splash-bg.webp') center / cover no-repeat; padding: var(--gutter); }
+.splash::before { content: ""; position: absolute; inset: 0; background: rgba(247, 247, 251, .33); }
+.splash__inner { position: relative; max-width: min(670px, 70%); animation: splash-in .8s cubic-bezier(.25, .46, .45, .94) both; }
+.splash__logo { width: min(300px, 50%); height: auto; margin-inline: auto; margin-bottom: 24px; }
+.splash__lead { color: #110d02; font-size: 22px; line-height: 32px; font-weight: 400; margin: 0 auto; }
+.splash__lead strong { font-weight: 700; }
+.splash__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+@keyframes splash-in { from { opacity: 0; transform: translateY(60px) scale(.9); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .splash__inner { animation: none; } }
+@media (max-width: 767px) { .splash__inner { max-width: 90%; } }
+@media (max-width: 479px) { .splash__actions .btn { width: 100%; } }
 
 /* ---- Embeds --------------------------------------------------------------------------- */
 .jobs-embed iframe { width: 100%; min-height: 900px; border: 0; border-radius: var(--radius-card); }
